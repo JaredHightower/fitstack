@@ -1,4 +1,4 @@
-import { Pill, Home, MessageSquare, BookOpen, Activity } from "lucide-react";
+import { Activity, BookOpen, Home, MessageSquare, Pill } from 'lucide-react';
 
 import {
   Sidebar,
@@ -9,33 +9,33 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar";
+} from '@/src/components/ui/sidebar';
 
 // Menu items.
 const items = [
   {
-    title: "Dashboard",
-    url: "#",
+    title: 'Dashboard',
+    url: '#',
     icon: Home,
   },
   {
-    title: "Chat AI Assistant",
-    url: "#",
+    title: 'Chat AI Assistant',
+    url: '#',
     icon: MessageSquare,
   },
   {
-    title: "My Supplements",
-    url: "#",
+    title: 'My Supplements',
+    url: '#',
     icon: Pill,
   },
   {
-    title: "Knowledge Base",
-    url: "#",
+    title: 'Knowledge Base',
+    url: '#',
     icon: BookOpen,
   },
   {
-    title: "Wellness Metrics",
-    url: "#",
+    title: 'Wellness Metrics',
+    url: '#',
     icon: Activity,
   },
 ];
@@ -53,7 +53,7 @@ export function AppSidebar() {
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {items.map(item => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
