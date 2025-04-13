@@ -11,7 +11,8 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "space",
+		"lineWidth": 100
 	},
 	"organizeImports": {
 		"enabled": true
@@ -19,12 +20,26 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"a11y": {
+				"useAriaPropsForRole": "warn"
+			},
+			"complexity": {
+				"noForEach": "warn"
+			},
+			"style": {
+				"useImportType": "warn"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "warn",
+				"noUnusedImports": "warn"
+			}
 		}
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "single",
+			"arrowParentheses": "asNeeded"
 		}
 	}
 }
