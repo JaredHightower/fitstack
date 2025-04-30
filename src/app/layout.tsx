@@ -4,6 +4,7 @@ import './globals.css';
 import { AppSidebar } from '@/src/components/ui/app-sidebar';
 import { SidebarProvider } from '@/src/components/ui/sidebar';
 import { SidebarTrigger } from '@/src/components/ui/sidebar';
+import { ConvexClientProvider } from '../db/ConvexProvider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,7 +36,7 @@ export default function RootLayout({
             {children}
           </main>
         </SidebarProvider>
-        {children}
+        <ConvexClientProvider>{children}</ConvexClientProvider>
       </body>
     </html>
   );
